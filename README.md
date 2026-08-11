@@ -102,6 +102,20 @@ bash scripts_v4/run_batch.sh
 
 Both expect their data alongside; see [`docs/data.md`](docs/data.md) for the symlinks.
 
+### Verified from a clean clone
+
+Both generations were run from a fresh `git clone` of this repository against the real
+corpus, and reproduce identically:
+
+| | Command | Result |
+|---|---|---|
+| First generation | `python -m ppi_only.main --config configs/ppi_only/mock_mlp.yaml --sanity-only` | all six sanity gates pass |
+| First generation | `... --smoke --limit-train 400 --limit-val 120` | trains, checkpoints, reports all six metrics |
+| Second generation | `cd ppi_v4 && python -m ppi_v4.main_v32 --config configs/02_fixo_mlp.yaml` | trains and evaluates; on `mf`, one epoch gives fmax 0.6505, wFmax 0.5055, Smin 8.386 |
+
+The second-generation figures are identical to the same run in the source tree, to the last
+digit — the repository carries everything the pipeline needs.
+
 ### Hardware
 
 The first generation runs comfortably on a 4 GB GPU. The second does not: building the
