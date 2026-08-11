@@ -1,0 +1,65 @@
+{
+  "tag": "mf_hybrid_add_gat_mlp_h0_a05_thr010_dedupmax",
+  "run_tag": "mf_hybrid_add_gat_mlp_h0_a05_thr010_dedupmax_v32",
+  "cfg": {
+    "batch_size": 256,
+    "lr": 0.0001,
+    "max_epochs": 250,
+    "patience": 20,
+    "num_workers": 4,
+    "loss_name": "protein",
+    "pos_weight_mode": "ic",
+    "resnet_unfreeze": "all",
+    "domain": "mf",
+    "split": "val",
+    "method": "hybrid",
+    "dedup": "max",
+    "thr": 0.1,
+    "norm": "col",
+    "convexize": 0,
+    "hops": 0,
+    "alpha_init": 0.5,
+    "hybrid_fusion": "add",
+    "gnn_type": "gat",
+    "gnn_emb_path": "precomp/gnn_gat_mf_thr010_h0_a00_mlp_dedupmax_hidden.pt",
+    "classifier_type": "mlp",
+    "mlp_hidden_dims": [
+      1024,
+      512
+    ],
+    "mlp_dropout": 0.4,
+    "seed": 1337
+  },
+  "graph": {
+    "n_nodes": 78637,
+    "n_directed_edges": 940412,
+    "w_min": 0.4000000059604645,
+    "w_max": 0.9990000128746033,
+    "w_mean": 0.7522106467132915,
+    "n_isolated": 25317
+  },
+  "metrics_by_split": {
+    "val": {
+      "fmax": 0.7801120667900567,
+      "fmax_star": 0.7404145653494049,
+      "wfmax": 0.7057336634265782,
+      "smin": 5.676015810648561,
+      "auprc": 0.6531677847918447,
+      "iauprc": 0.8172927566758821
+    },
+    "test": {
+      "fmax": 0.7779950334698935,
+      "fmax_star": 0.7363031888412727,
+      "wfmax": 0.6968449670849344,
+      "smin": 5.74857969050748,
+      "auprc": 0.6528447410292787,
+      "iauprc": 0.8154323983079228
+    }
+  },
+  "timestamp": "2026-08-03T05:51:36",
+  "runtime": {
+    "wall_seconds": 866.8,
+    "peak_vram_mb": 3125.6,
+    "device": "cuda"
+  }
+}

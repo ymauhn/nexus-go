@@ -1,0 +1,57 @@
+{
+  "tag": "cc_convnext_tiny_max_protein_seed1337",
+  "cfg": {
+    "domain": "cc",
+    "model": "convnext_tiny",
+    "pooling": "max",
+    "loss_name": "protein",
+    "pos_weight_mode": "ic",
+    "out_size": 1024,
+    "image_size": 224,
+    "batch_size": 32,
+    "lr": 0.0001,
+    "max_epochs": 200,
+    "patience": 25,
+    "num_workers": 0,
+    "vec_cache": 1,
+    "unfreeze": "all",
+    "pretrained": 1,
+    "seed": 1337,
+    "smoke": false,
+    "limit_train": 0,
+    "limit_val": 0
+  },
+  "seed": 1337,
+  "device": "cuda",
+  "n_classes": 498,
+  "train_size": 74328,
+  "input_dim": null,
+  "image_size": 224,
+  "null_train_vectors": 0,
+  "train_seconds": 4657.5,
+  "libs": {
+    "python": "3.12.13",
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "numpy": "2.0.2",
+    "pandas": "2.2.2"
+  },
+  "metrics_by_split": {
+    "val": {
+      "fmax": 0.6413172706182421,
+      "fmax_star": 0.5970468694378077,
+      "wfmax": 0.4083606276914939,
+      "smin": 12.344490597223485,
+      "auprc": 0.6821334708006784,
+      "iauprc": 0.6771697842879468
+    },
+    "test": {
+      "fmax": 0.6398824873863479,
+      "fmax_star": 0.5955244456035574,
+      "wfmax": 0.40952901375083534,
+      "smin": 12.51073101899437,
+      "auprc": 0.6805290646303613,
+      "iauprc": 0.675952647496697
+    }
+  }
+}

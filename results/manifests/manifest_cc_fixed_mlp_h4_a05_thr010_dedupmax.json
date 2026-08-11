@@ -1,0 +1,62 @@
+{
+  "tag": "cc_fixed_mlp_h4_a05_thr010_dedupmax",
+  "run_tag": "cc_fixed_mlp_h4_a05_thr010_dedupmax_v32",
+  "cfg": {
+    "batch_size": 256,
+    "lr": 0.0001,
+    "max_epochs": 250,
+    "patience": 20,
+    "num_workers": 4,
+    "loss_name": "protein",
+    "pos_weight_mode": "ic",
+    "resnet_unfreeze": "all",
+    "domain": "cc",
+    "split": "val",
+    "method": "fixed",
+    "dedup": "max",
+    "thr": 0.1,
+    "norm": "col",
+    "convexize": 0,
+    "hops": 4,
+    "alpha_init": 0.5,
+    "classifier_type": "mlp",
+    "mlp_hidden_dims": [
+      1024,
+      512
+    ],
+    "mlp_dropout": 0.4,
+    "seed": 1337
+  },
+  "graph": {
+    "n_nodes": 92912,
+    "n_directed_edges": 1133132,
+    "w_min": 0.4000000059604645,
+    "w_max": 0.9990000128746033,
+    "w_mean": 0.7598636336977185,
+    "n_isolated": 32477
+  },
+  "metrics_by_split": {
+    "val": {
+      "fmax": 0.7605257457610138,
+      "fmax_star": 0.7341205126953756,
+      "wfmax": 0.6302632257410383,
+      "smin": 9.402714657074426,
+      "auprc": 0.7231787584803544,
+      "iauprc": 0.8252511392129172
+    },
+    "test": {
+      "fmax": 0.761738817924955,
+      "fmax_star": 0.7356002661960765,
+      "wfmax": 0.6343138633131349,
+      "smin": 9.338424703515136,
+      "auprc": 0.7274531283989658,
+      "iauprc": 0.8316088097029455
+    }
+  },
+  "timestamp": "2026-07-30T03:36:10",
+  "runtime": {
+    "wall_seconds": 1058.6,
+    "peak_vram_mb": 6602.5,
+    "device": "cuda"
+  }
+}

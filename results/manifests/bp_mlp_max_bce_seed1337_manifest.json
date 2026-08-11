@@ -1,0 +1,56 @@
+{
+  "tag": "bp_mlp_max_bce_seed1337",
+  "cfg": {
+    "domain": "bp",
+    "model": "mlp",
+    "pooling": "max",
+    "loss_name": "bce",
+    "pos_weight_mode": "ic",
+    "out_size": 1024,
+    "image_size": 224,
+    "batch_size": 32,
+    "lr": 0.0001,
+    "max_epochs": 200,
+    "patience": 25,
+    "num_workers": 0,
+    "unfreeze": "all",
+    "pretrained": 1,
+    "seed": 1337,
+    "smoke": false,
+    "limit_train": 0,
+    "limit_val": 0
+  },
+  "seed": 1337,
+  "device": "cuda",
+  "n_classes": 500,
+  "train_size": 73768,
+  "input_dim": 1024,
+  "image_size": null,
+  "null_train_vectors": 0,
+  "train_seconds": 2160.8,
+  "libs": {
+    "python": "3.10.20",
+    "torch": "2.4.0+cu124",
+    "torchvision": "0.19.0+cu124",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3"
+  },
+  "metrics_by_split": {
+    "val": {
+      "fmax": 0.37855157811019785,
+      "fmax_star": 0.32866539716641563,
+      "wfmax": 0.31188403636091366,
+      "smin": 23.20998732269809,
+      "auprc": 0.3587556272051914,
+      "iauprc": 0.3536430137540825
+    },
+    "test": {
+      "fmax": 0.3823677168747481,
+      "fmax_star": 0.3339804135619571,
+      "wfmax": 0.3173049259178069,
+      "smin": 23.67026911312164,
+      "auprc": 0.3645470725266885,
+      "iauprc": 0.3592063436771331
+    }
+  }
+}

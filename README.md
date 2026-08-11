@@ -82,9 +82,11 @@ data/                empty in git — see docs/data.md
 
 ## Running
 
-The environment, the exact package pins and the hardware used for each campaign are in
-[`docs/environment.md`](docs/environment.md). Data provenance and download instructions are
-in [`docs/data.md`](docs/data.md).
+The environment, the exact package pins, the hardware used for each campaign, the
+determinism settings and the per-generation hyperparameters are in
+[`docs/environment.md`](docs/environment.md). Bitwise reproducibility across runs or
+hardware is not claimed there, and the reason is stated. Data provenance and download
+instructions are in [`docs/data.md`](docs/data.md).
 
 **The two generations run from different working directories** — this is not incidental,
 it is what lets `ppi_only/compat.py` resolve the shared metric and loss from `ppi_v4`.
@@ -132,6 +134,12 @@ is far too slow for a real campaign.
 [`results/chapter6/00_INDICE.md`](results/chapter6/00_INDICE.md) maps every run to the
 table it appears in. The consolidated CSVs live in `results/chapter6/dados/`.
 
+Each run also writes a manifest recording its effective configuration after all overrides
+— including the random seed, the objective and the learning rate — a summary of the graph
+actually built, the validation metrics, and the wall time and peak device memory of the
+run. The manifests are in [`results/manifests/`](results/manifests/) and are what makes
+every figure in the dissertation traceable to the configuration that produced it.
+
 Headline test-set figures (wFmax, the primary criterion):
 
 | Ontology | PROPELG-GO | Best baseline |
@@ -161,7 +169,6 @@ that every number in the tables remains traceable to the code that produced it.
 These are recorded here rather than patched. Two of them (the working directory for each
 generation, and where `raw/` must live) are covered by the symlink arrangement in
 [`docs/data.md`](docs/data.md) and need no code change at all.
-| `results/ppi_only/` | Carries the per-run `*_metrics.csv` but not the matching `*_manifest.json`, so `python -m ppi_only.consolidate` cannot run here. Use `tools/combine_report.py` instead. |
 
 ## Licence
 
