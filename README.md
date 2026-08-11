@@ -182,8 +182,3 @@ generation, and where `raw/` must live) are covered by the symlink arrangement i
 * **MAUHNOOM, Y.**; OLIVEIRA, G. B.; PEDRINI, H.; DIAS, Z. *From Graphs to Images:
 Non-Parametric PPI Context Integration for Vision-Based Protein Function Prediction.*
 VISAPP 2026, Marbella, Spain.
-
-**Under Review**
-* **MAUHNOOM, Y.**; OLIVEIRA, G. B.; PEDRINI, H.; DIAS, Z. *Beyond Learnable Graphs: Fixed
-Multi-Hop PPI Diffusion of Sequence Embeddings for Robust Protein Function Prediction.*
-Extended journal version, under review.
