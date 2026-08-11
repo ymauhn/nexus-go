@@ -19,7 +19,7 @@ like, and who it interacts with. Protein language models capture the first. Inte
 networks carry the second — but exploiting them usually means training a graph neural
 network, which adds parameters, cost and opacity.
 
-PROPELG-GO treats propagation as a **design axis rather than a fixed choice**:
+NEXUS-GO treats propagation as a **design axis rather than a fixed choice**:
 
 ```
       fixed  ←───────────── spectrum ─────────────→  learned
@@ -142,7 +142,7 @@ every figure in the dissertation traceable to the configuration that produced it
 
 Headline test-set figures (wFmax, the primary criterion):
 
-| Ontology | PROPELG-GO | Best baseline |
+| Ontology | NEXUS-GO | Best baseline |
 |---|--:|--:|
 | Biological Process | **58.69** | 48.92 (DeepGraphGO) |
 | Cellular Component | **68.65** | 60.35 (DeepGraphGO) |
