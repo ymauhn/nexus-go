@@ -168,7 +168,6 @@ generation, and where `raw/` must live) are covered by the symlink arrangement i
 **All rights reserved** while the extended article is under review — see
 [`NOTICE.md`](NOTICE.md). An open-source licence will be applied on publication.
 
-## Publications
 
 ## Publications
 
