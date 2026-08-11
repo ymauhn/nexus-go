@@ -1,0 +1,14 @@
+domain: bp
+model: resnet50       # override com --arch convnext_tiny quando quiser
+pooling: max
+loss_name: protein
+pos_weight_mode: ic
+image_size: 224
+unfreeze: all
+pretrained: 1
+batch_size: 16
+lr: 0.0001
+max_epochs: 1
+patience: 1
+num_workers: 0
+seed: 1337

@@ -1,0 +1,16 @@
+# Base defaults for PPI-only experiments (override per-run via CLI or the ablation runner).
+domain: bp
+model: mlp            # mlp | cnn1d | resnet50 | convnext_tiny
+pooling: max          # max | avg | raw   (raw only for mlp/cnn1d)
+loss_name: protein    # protein | bce
+pos_weight_mode: ic
+out_size: 1024        # vector length after max/avg pooling
+image_size: 224       # image head: vector pooled to this -> outer-diff (image_size x image_size)
+batch_size: 32
+lr: 0.0001
+max_epochs: 200
+patience: 25
+num_workers: 0        # local runs use 0 (validated config); image heads deferred to Colab
+unfreeze: all
+pretrained: 1
+seed: 1337
