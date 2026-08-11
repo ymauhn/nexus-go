@@ -1,0 +1,140 @@
+
+BP0:
+--- AVALIAÇÃO FINAL ---
+Métricas (val): {'fmax': 0.5892077411480797, 'fmax_star': 0.5552433224562746, 'wfmax': 0.5291332308277337, 'smin': 18.830329326218703, 'auprc': np.float64(0.5559553993865115), 'iauprc': np.float64(0.618506720169768)}
+
+BP1:
+--- AVALIAÇÃO FINAL ---
+Métricas (val): {'fmax': 0.6067651884534202, 'fmax_star': 0.573053480559338, 'wfmax': 0.5481248282109596, 'smin': 18.106613144323457, 'auprc': np.float64(0.5781273158479696), 'iauprc': np.float64(0.6389961571969461)}
+
+BP2:
+--- AVALIAÇÃO FINAL ---
+Métricas (val): {'fmax': 0.5981718704030058, 'fmax_star': 0.5636344688593407, 'wfmax': 0.5388415628975055, 'smin': 18.31104892740752, 'auprc': np.float64(0.5697747127580169), 'iauprc': np.float64(0.6348503434338311)}
+
+BP3:
+--- AVALIAÇÃO FINAL ---
+Métricas (val): {'fmax': 0.570226783752941, 'fmax_star': 0.5359655575294368, 'wfmax': 0.5090304456871135, 'smin': 19.233607671503215, 'auprc': np.float64(0.5460557460258659), 'iauprc': np.float64(0.6140809565301488)}
+
+
+BP4:
+--- AVALIAÇÃO FINAL ---
+Métricas (val): {'fmax': 0.551558371584403, 'fmax_star': 0.5154673364569202, 'wfmax': 0.48779206480717396, 'smin': 19.96024995695288, 'auprc': np.float64(0.5267792496954691), 'iauprc': np.float64(0.5981304913413846)}
+
+bp5:
+--- AVALIAÇÃO FINAL ---
+Métricas (val): {'fmax': 0.5372053718306575, 'fmax_star': 0.4980672561732538, 'wfmax': 0.4712191832139962, 'smin': 20.494629050813298, 'auprc': np.float64(0.5124467024856002), 'iauprc': np.float64(0.5840161136811131)}
+
+bp6:
+--- AVALIAÇÃO FINAL ---
+Métricas (val): {'fmax': 0.51877583201048, 'fmax_star': 0.46706247525478073, 'wfmax': 0.4483524735337593, 'smin': 21.344064044671097, 'auprc': np.float64(0.4856094259067329), 'iauprc': np.float64(0.5576144249788635)}
+
+bp7:
+--- AVALIAÇÃO FINAL ---
+Métricas (val): {'fmax': 0.5037748958050468, 'fmax_star': 0.44636626662021045, 'wfmax': 0.42684500228595157, 'smin': 21.560841184347133, 'auprc': np.float64(0.46618354673824636), 'iauprc': np.float64(0.5385369252166947)}
+
+bp8:
+--- AVALIAÇÃO FINAL ---
+Métricas (val): {'fmax': 0.5060606615161838, 'fmax_star': 0.44151652029173727, 'wfmax': 0.4202776881028819, 'smin': 21.690819049959607, 'auprc': np.float64(0.46218973043189715), 'iauprc': np.float64(0.5338756724853896)}
+
+bp9:
+--- AVALIAÇÃO FINAL ---
+Métricas (val): {'fmax': 0.4931309012728634, 'fmax_star': 0.43845218541229575, 'wfmax': 0.4171386766538044, 'smin': 21.694315339777873, 'auprc': np.float64(0.4560851602397837), 'iauprc': np.float64(0.5289805257246296)}
+
+bp10:
+--- AVALIAÇÃO FINAL ---
+Métricas (val): {'fmax': 0.5081553238734265, 'fmax_star': 0.4388722481757067, 'wfmax': 0.4173583914900691, 'smin': 21.9350120548704, 'auprc': np.float64(0.45604554453205365), 'iauprc': np.float64(0.5288608803875217)}
+
+
+
+cc0:
+--- AVALIAÇÃO FINAL ---
+Métricas (val): {'fmax': 0.768849544483512, 'fmax_star': 0.7429809172700045, 'wfmax': 0.6437229416101498, 'smin': 9.349195714857224, 'auprc': np.float64(0.7243776366526646), 'iauprc': np.float64(0.8271574927652228)}
+
+
+CC1:
+--- AVALIAÇÃO FINAL ---
+Métricas (val): {'fmax': 0.7777904280715117, 'fmax_star': 0.7531346674499798, 'wfmax': 0.6574866600676971, 'smin': 8.782396664134337, 'auprc': np.float64(0.7358122334263362), 'iauprc': np.float64(0.8393488227178247)}
+
+CC2:
+--- AVALIAÇÃO FINAL ---
+Métricas (val): {'fmax': 0.7700768495881091, 'fmax_star': 0.7446961551195285, 'wfmax': 0.6442015908377527, 'smin': 8.950774210203742, 'auprc': np.float64(0.7273411452108995), 'iauprc': np.float64(0.8330228450914127)}
+
+CC3:
+--- AVALIAÇÃO FINAL ---
+Métricas (val): {'fmax': 0.7565339988729096, 'fmax_star': 0.7288304542784309, 'wfmax': 0.6202694939111825, 'smin': 9.444462759983796, 'auprc': np.float64(0.7161807953282185), 'iauprc': np.float64(0.825599313145012)}
+
+CC4:
+--- AVALIAÇÃO FINAL ---
+Métricas (val): {'fmax': 0.7413819281399568, 'fmax_star': 0.7115006798780469, 'wfmax': 0.5977190121067784, 'smin': 9.939156991379978, 'auprc': np.float64(0.6985684935242086), 'iauprc': np.float64(0.8060816058175913)}
+
+CC5:
+--- AVALIAÇÃO FINAL ---
+Métricas (val): {'fmax': 0.7199052995328284, 'fmax_star': 0.6857755445473721, 'wfmax': 0.5562255665793986, 'smin': 10.289010640629918, 'auprc': np.float64(0.6717135824267684), 'iauprc': np.float64(0.7796074440782275)}
+
+CC6:
+--- AVALIAÇÃO FINAL ---
+Métricas (val): {'fmax': 0.7131812792173376, 'fmax_star': 0.6777935763020142, 'wfmax': 0.542700350961048, 'smin': 10.442181988542126, 'auprc': np.float64(0.6640206206306303), 'iauprc': np.float64(0.7721948253063236)}
+
+CC7:
+--- AVALIAÇÃO FINAL ---
+Métricas (val): {'fmax': 0.7119022213920732, 'fmax_star': 0.6776298871241577, 'wfmax': 0.5377849433852343, 'smin': 10.560941624153418, 'auprc': np.float64(0.6621560033618846), 'iauprc': np.float64(0.7689084376580158)}
+
+CC8:
+--- AVALIAÇÃO FINAL ---
+Métricas (val): {'fmax': 0.7092145701405469, 'fmax_star': 0.6735037238914746, 'wfmax': 0.5334951231856541, 'smin': 10.516967443736362, 'auprc': np.float64(0.6604451688223864), 'iauprc': np.float64(0.7660723554791466)}
+
+CC9:
+--- AVALIAÇÃO FINAL ---
+Métricas (val): {'fmax': 0.7072621673776187, 'fmax_star': 0.6713665819612625, 'wfmax': 0.5294378112258741, 'smin': 10.623780603029337, 'auprc': np.float64(0.6573177189237843), 'iauprc': np.float64(0.7657272577135112)}
+
+CC10:
+--- AVALIAÇÃO FINAL ---
+Métricas (val): {'fmax': 0.708403094423255, 'fmax_star': 0.6722488653164873, 'wfmax': 0.5327440110673561, 'smin': 10.647940852870319, 'auprc': np.float64(0.6600774107556668), 'iauprc': np.float64(0.7658091461928367)}
+
+
+
+mf0:
+--- AVALIAÇÃO FINAL ---
+Métricas (val): {'fmax': 0.8024572406436872, 'fmax_star': 0.7671027717997264, 'wfmax': 0.7348382808702495, 'smin': 5.312529535980474, 'auprc': np.float64(0.6677164765809842), 'iauprc': np.float64(0.8339161945036179)}
+
+mf1:
+--- AVALIAÇÃO FINAL ---
+Métricas (val): {'fmax': 0.7949595037884825, 'fmax_star': 0.7582390138597281, 'wfmax': 0.724264133094224, 'smin': 5.472293383541197, 'auprc': np.float64(0.6620502547962818), 'iauprc': np.float64(0.8319632712263979)}
+
+mf2:
+--- AVALIAÇÃO FINAL ---
+Métricas (val): {'fmax': 0.7807605338264115, 'fmax_star': 0.7412192584025232, 'wfmax': 0.7045099151801396, 'smin': 5.7600800085044686, 'auprc': np.float64(0.6482929766642832), 'iauprc': np.float64(0.8214036017693559)}
+
+mf3:
+--- AVALIAÇÃO FINAL ---
+Métricas (val): {'fmax': 0.7547754572854091, 'fmax_star': 0.7109948555587797, 'wfmax': 0.6710497184186133, 'smin': 6.355905830839481, 'auprc': np.float64(0.6254077845212876), 'iauprc': np.float64(0.8006364640361424)}
+
+mf4:
+--- AVALIAÇÃO FINAL ---
+Métricas (val): {'fmax': 0.7338762640451761, 'fmax_star': 0.6852604266379291, 'wfmax': 0.6438564965190743, 'smin': 6.802548445812579, 'auprc': np.float64(0.6055381914290026), 'iauprc': np.float64(0.7808822747852637)}
+
+mf5:
+--- AVALIAÇÃO FINAL ---
+Métricas (val): {'fmax': 0.7130548317481903, 'fmax_star': 0.6594182693435268, 'wfmax': 0.6190786217151681, 'smin': 7.232461258453645, 'auprc': np.float64(0.5815467968174656), 'iauprc': np.float64(0.7575953807851707)}
+
+mf6:
+--- AVALIAÇÃO FINAL ---
+Métricas (val): {'fmax': 0.6841321051592374, 'fmax_star': 0.6203113830906906, 'wfmax': 0.573323219628858, 'smin': 7.695557615982509, 'auprc': np.float64(0.5331117784683574), 'iauprc': np.float64(0.7083320586110026)}
+
+mf7:
+--- AVALIAÇÃO FINAL ---
+Métricas (val): {'fmax': 0.676522750973026, 'fmax_star': 0.6156883298610043, 'wfmax': 0.5724012348599398, 'smin': 7.885725367571451, 'auprc': np.float64(0.5232606175340823), 'iauprc': np.float64(0.6956420999026116)}
+
+
+mf8:
+--- AVALIAÇÃO FINAL ---
+Métricas (val): {'fmax': 0.6759011635477031, 'fmax_star': 0.6126532763879007, 'wfmax': 0.5652104987909458, 'smin': 7.955429814550841, 'auprc': np.float64(0.5203422086631919), 'iauprc': np.float64(0.6960430204192126)}
+
+
+mf9:
+--- AVALIAÇÃO FINAL ---
+Métricas (val): {'fmax': 0.6672030745130948, 'fmax_star': 0.5966594935072869, 'wfmax': 0.5479428449389382, 'smin': 7.981939003303739, 'auprc': np.float64(0.5147959958980887), 'iauprc': np.float64(0.6890437916346606)}
+
+mf10:
+--- AVALIAÇÃO FINAL ---
+Métricas (val): {'fmax': 0.6643187863620534, 'fmax_star': 0.5971832157780053, 'wfmax': 0.5500008470905504, 'smin': 8.03145618142511, 'auprc': np.float64(0.5116272305200423), 'iauprc': np.float64(0.686368973857291)}
