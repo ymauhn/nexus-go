@@ -1,0 +1,37 @@
+# ---- data: never versioned, see docs/data.md ----
+data/*
+!data/.gitkeep
+!data/README.md
+
+# Runtime symlinks. These are files, not directories, so the patterns above do
+# not catch them — without these four lines a `data -> /home/you/...` symlink is
+# committed verbatim and breaks for everyone else.
+/raw
+/ppi_v4/data
+/ppi_v4/raw
+
+precomp/
+runs_v31/
+
+# ---- training artefacts (regenerable; several GB) ----
+runs/*.pt
+runs/*_loss_hist.json
+results/**/*.npy
+*.pt
+*.npy
+*.obo
+logs/
+
+# NOTE: results/**/*_losses.png is deliberately NOT ignored — the loss curves
+# are ~660 KB in total and are the visual evidence of every training run.
+
+# ---- python ----
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+*.egg-info/
+.venv/
+
+# ---- editor / OS ----
+.*.sw[nop]
+.DS_Store

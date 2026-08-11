@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+title: "PROPELG-GO: Protein Propagation over Embedding-Linked Graphs for Gene Ontology Function Annotation"
+message: "If you use this software, please cite the VISAPP 2026 article below."
+type: software
+authors:
+  - family-names: Mauhnoom
+    given-names: Yeonatan
+    affiliation: "Institute of Computing, University of Campinas (UNICAMP)"
+    orcid: ""
+repository-code: "https://github.com/ymauhn/propelg-go"
+abstract: >-
+  Protein function annotation by propagating protein language model embeddings over
+  protein-protein interaction networks, spanning non-parametric multi-hop diffusion,
+  learned graph neural networks (GCN, GAT, GraphSAGE) and their fusion.
+keywords:
+  - protein function prediction
+  - protein-protein interaction
+  - graph neural networks
+  - protein language models
+  - gene ontology
+preferred-citation:
+  type: conference-paper
+  title: "From Graphs to Images: Non-Parametric PPI Context Integration for Vision-Based Protein Function Prediction"
+  authors:
+    - family-names: Mauhnoom
+      given-names: Yeonatan
+    - family-names: de Oliveira
+      given-names: Gabriel Bianchin
+    - family-names: Pedrini
+      given-names: Helio
+    - family-names: Dias
+      given-names: Zanoni
+  collection-title: "International Conference on Computer Vision Theory and Applications (VISAPP)"
+  year: 2026
+  location:
+    name: "Marbella, Spain"
