@@ -1,0 +1,15 @@
+domain: bp
+split: val
+method: "load_gnn"
+gnn_emb_path: "precomp/gnn_gat_bp_hidden.pt"
+classifier_type: "vision" 
+arch: "convnext_tiny"
+unfreeze: "all"
+pretrained: 1
+batch_size: 64
+lr: 0.0001
+max_epochs: 50
+patience: 10
+loss_name: "protein"
+pos_weight_mode: "ic"
+seed: 1337

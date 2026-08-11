@@ -1,0 +1,16 @@
+domain: bp
+split: val
+method: "gnn"
+gnn_type: "gat"
+gnn_hidden_dim: 1024
+thr: 0.40
+norm: col
+convexize: 0
+classifier_type: "mlp" 
+batch_size: 64
+lr: 0.001
+max_epochs: 100
+patience: 15
+loss_name: "protein"
+pos_weight_mode: "ic"
+seed: 1337

@@ -1,0 +1,29 @@
+domain: bp
+split: val
+
+# --- Graph Structure ---
+thr: 0.40
+norm: col
+convexize: 0
+
+# --- GNN Config ---
+method: "gnn"
+gnn_type: "gat"
+gnn_hidden_dim: 1024
+gnn_num_layers: 2
+gnn_heads: 4
+
+# --- Classifier (E2E Vision Head) ---
+classifier_type: "vision"
+arch: "convnext_base"
+pretrained: 1
+unfreeze: 0         # Lembrete: Deixando 0 para poupar memória no primeiro teste!
+
+# --- Training ---
+batch_size: 16      # Reduzido para caber GNN + Vision na VRAM
+lr: 0.0001
+max_epochs: 100
+patience: 15
+loss_name: "protein"
+pos_weight_mode: "ic"
+seed: 1337

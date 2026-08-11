@@ -1,0 +1,30 @@
+domain: bp
+split: val
+
+# --- Graph & Context ---
+method: "hybrid"                               
+gnn_emb_path: "precomp/gnn_gat_bp_hidden.pt"   
+hybrid_fusion: "concat"                        
+
+# Parâmetros SPMM
+hops: 2 
+alpha_init: 0.5
+thr: 0.40
+norm: col
+
+# --- Classifier ---
+classifier_type: "mlp" 
+
+# NOVO: Controle total da sua MLP!
+# Exemplo de uma MLP mais profunda, diminuindo a dimensionalidade aos poucos:
+mlp_hidden_dims: [2048, 1024, 512] 
+mlp_dropout: 0.4                   
+
+# --- Training ---
+batch_size: 64
+lr: 0.001
+max_epochs: 100
+patience: 15
+loss_name: "protein"
+pos_weight_mode: "ic"
+seed: 1337

@@ -1,0 +1,16 @@
+domain: bp
+split: val
+method: "fixed"
+hops: 5
+alpha_init: 0.5
+thr: 0.10
+norm: col
+convexize: 0
+classifier_type: "mlp" 
+batch_size: 64
+lr: 0.0001
+max_epochs: 50
+patience: 10
+loss_name: "protein"
+pos_weight_mode: "ic"
+seed: 1337
