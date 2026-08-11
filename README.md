@@ -1,6 +1,6 @@
-# PROPELG-GO
+# NEXUS-GO
 
-**Protein Propagation over Embedding-Linked Graphs, for Gene Ontology**
+**Network-Extended Unified Sequence Embeddings for Gene Ontology Function Annotation**
 
 MSc research at the Institute of Computing, UNICAMP — protein function annotation by
 propagating protein language model embeddings over protein–protein interaction networks,
