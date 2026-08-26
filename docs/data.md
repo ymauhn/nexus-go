@@ -43,7 +43,48 @@ closure over `is_a`, and true-path-rule propagation of predictions are implement
 
 ## Sequence embeddings
 
-**ProtT5-XL-U50** (`Rostlab/prot_t5_xl_half_uniref50-enc`), used frozen. Sequences longer
+**ProtT5-XL-U50** (`Rostlab/prot_t5_xl_half_uniref50-enc`), used frozen.
+
+### Exact version
+
+| | |
+|---|---|
+| Repository | `Rostlab/prot_t5_xl_half_uniref50-enc` |
+| Revision (commit) | `94a6abc029ae13029317b140b7424e012bf8dfbf` |
+| Revision date | 2023-01-31 |
+| Weights `pytorch_model.bin` | sha256 `7f51ba885541c7dc569d46b796af57cc7a2ba7945107dced4f19d1b5ec091157` (2,304.4 MB) |
+| Tokenizer `spiece.model` | git blob `83d8d2c99eae89e3381864acde18b34ff149f35e` |
+| Config `config.json` | git blob `cff0e529dac2d369597f918a97f63fd41860911c` |
+
+`prot_t5.py` loads the model by name, without a `revision=` argument, so the version is not
+recorded at run time. It is established here from two facts that pin it unambiguously: the
+embeddings under `raw/` were generated on **2025-11-24/25**, and the model repository's most
+recent commit is **2023-01-31**. Any download in that window resolves to the same revision,
+which is still the head of `main`.
+
+That 2023-01-31 commit only edited the README. The weights were uploaded on 2022-05-20
+(`e380a835582c6ed7bb93fbeaeba500174d9a5b54`) and the configuration last changed on
+2022-05-21 (`f94c9e6bb5c077ccd6fe1a34e7d1a0400aeb9a39`), so the artefacts these results
+depend on have not moved since May 2022 — whichever of the three revisions is cited.
+
+To pin it explicitly in future runs:
+
+```python
+T5EncoderModel.from_pretrained(
+    "Rostlab/prot_t5_xl_half_uniref50-enc",
+    revision="94a6abc029ae13029317b140b7424e012bf8dfbf",
+    torch_dtype=dtype,
+)
+```
+
+To verify a local copy against the published hash:
+
+```bash
+sha256sum ~/.cache/huggingface/hub/models--Rostlab--prot_t5_xl_half_uniref50-enc/snapshots/94a6abc029ae13029317b140b7424e012bf8dfbf/pytorch_model.bin
+# expected: 7f51ba885541c7dc569d46b796af57cc7a2ba7945107dced4f19d1b5ec091157
+```
+
+Sequences longer
 than 1,022 tokens are chunked; layers 24, 23 and 22 are read, mean-pooled over valid
 positions using the attention mask, and concatenated into a 3,072-dimensional vector per
 protein.
