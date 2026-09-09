@@ -6,7 +6,6 @@ authors:
   - family-names: Mauhnoom
     given-names: Yeonatan
     affiliation: "Institute of Computing, University of Campinas (UNICAMP)"
-    orcid: ""
 repository-code: "https://github.com/ymauhn/nexus-go"
 license: MIT
 abstract: >-
