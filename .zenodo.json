@@ -1,0 +1,47 @@
+{
+  "upload_type": "software",
+  "title": "NEXUS-GO: Network-Extended Unified Sequence Embeddings for Gene Ontology Function Annotation",
+  "description": "<p>Protein function annotation by propagating protein language model embeddings over protein-protein interaction networks, across the full range from parameter-free multi-hop diffusion to learned graph neural networks (GCN, GAT, GraphSAGE) and their fusion.</p><p>This release is the archived snapshot of the code and derived results behind an MSc dissertation at the Institute of Computing, University of Campinas (UNICAMP). It contains the consolidated metric tables, 130 per-run manifests recording the effective configuration of every experiment, and the consolidation reports that map each run to the table it appears in.</p><p>The input corpora are third-party material and are not redistributed here: the annotation corpus derives from the CAFA5 training set, the interaction network is STRING v11.5, and the ontology is the OBO release of the Gene Ontology. Sequence representations were generated locally with ProtT5-XL-U50, used frozen. Provenance, versions and checksums are documented in <code>docs/data.md</code>.</p><p>Source code is licensed under MIT. The derived results in <code>results/</code> are licensed under CC BY 4.0.</p>",
+  "creators": [
+    {
+      "name": "Mauhnoom, Yeonatan",
+      "affiliation": "Institute of Computing, University of Campinas (UNICAMP)",
+      "orcid": "0009-0009-0362-2861"
+    },
+    {
+      "name": "de Oliveira, Gabriel Bianchin",
+      "affiliation": "Institute of Computing, University of Campinas (UNICAMP)"
+    },
+    {
+      "name": "Pedrini, Helio",
+      "affiliation": "Institute of Computing, University of Campinas (UNICAMP)"
+    },
+    {
+      "name": "Dias, Zanoni",
+      "affiliation": "Institute of Computing, University of Campinas (UNICAMP)"
+    }
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "language": "eng",
+  "keywords": [
+    "protein function prediction",
+    "gene ontology",
+    "protein-protein interaction networks",
+    "protein language models",
+    "ProtT5",
+    "graph neural networks",
+    "graph diffusion",
+    "deep learning",
+    "bioinformatics",
+    "CAFA5",
+    "STRING"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ymauhn/nexus-go",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
