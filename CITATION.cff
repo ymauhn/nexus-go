@@ -8,6 +8,7 @@ authors:
     affiliation: "Institute of Computing, University of Campinas (UNICAMP)"
     orcid: ""
 repository-code: "https://github.com/ymauhn/nexus-go"
+license: MIT
 abstract: >-
   Protein function annotation by propagating protein language model embeddings over
   protein-protein interaction networks, spanning non-parametric multi-hop diffusion,

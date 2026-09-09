@@ -1,0 +1,35 @@
+NEXUS-GO — Data licence
+
+The experimental results distributed in `results/` — the consolidated metric
+tables, the per-run manifests and the consolidation reports — are licensed
+under the Creative Commons Attribution 4.0 International Licence (CC BY 4.0).
+
+    Summary:    https://creativecommons.org/licenses/by/4.0/
+    Legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+
+You are free to share and adapt this material for any purpose, including
+commercially, provided you give appropriate credit, link to the licence, and
+indicate whether changes were made.
+
+
+Attribution
+-----------
+
+    Mauhnoom, Y.; de Oliveira, G. B.; Pedrini, H.; Dias, Z.
+    NEXUS-GO: Network-Extended Unified Sequence Embeddings for Gene Ontology
+    Function Annotation. Institute of Computing, University of Campinas
+    (UNICAMP), 2026. https://github.com/ymauhn/nexus-go
+
+
+Scope
+-----
+
+This licence covers only the derived results in `results/`. The source code in
+this repository is licensed separately, under the MIT Licence — see `LICENSE`.
+
+The input corpora are third-party material. They are neither redistributed here
+nor covered by this licence: the CAFA5 annotation corpus is subject to the terms
+of its Kaggle competition, the STRING v11.5 network to the terms of the STRING
+consortium, the Gene Ontology to its own licence, and the ProtT5-XL-U50 weights
+to the terms of the Rostlab model card. See `docs/data.md` for provenance and
+for how to obtain each source.

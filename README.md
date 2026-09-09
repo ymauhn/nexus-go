@@ -172,8 +172,11 @@ generation, and where `raw/` must live) are covered by the symlink arrangement i
 
 ## Licence
 
-**All rights reserved** while the extended article is under review — see
-[`NOTICE.md`](NOTICE.md). An open-source licence will be applied on publication.
+Code under the [MIT Licence](LICENSE). The experimental results in `results/`
+under [CC BY 4.0](LICENSE-DATA) — reuse them freely, with credit.
+
+The input corpora are third-party and are not redistributed here; they stay under
+the terms of their own providers, listed in [`docs/data.md`](docs/data.md).
 
 
 ## Publications
